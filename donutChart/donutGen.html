@@ -8,11 +8,13 @@
 <svg width="600" height="600"></svg>
 <script>
     const data = [
-        {array_id: 0, sum_values: 538},
-        {array_id: 1, sum_values: 222},
-        {array_id: 2, sum_values: 319},
-        {array_id: 3, sum_values: 407},
-        {array_id: 4, sum_values: 406},
+        {array_id: 9, sum_values: 45},
+        {array_id: 9, sum_values: 44},
+        {array_id: 9, sum_values: 18},
+        {array_id: 9, sum_values: 22},
+        {array_id: 9, sum_values: 67},
+        {array_id: 9, sum_values: 99},
+        {array_id: 9, sum_values: 78}
     ];
     const width = 600;
     const height = 600;
@@ -24,7 +26,12 @@
         .append("g")
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-    const color = d3.scaleOrdinal(d3.schemeCategory10);
+    // Define a color scale with different shades of blue, and red for the first two values
+    const color = (i) => {
+        if (i === 0 || i === 1) return "#FF0000"; // Red for the first two values
+        const blueShades = ["#add8e6", "#87CEEB", "#4682B4", "#4169E1", "#0000FF"];
+        return blueShades[i - 2]; // Adjust index for blue shades given the fewer number of data points
+    };
 
     const arc = d3.arc()
         .innerRadius(radius - 100)
@@ -51,3 +58,12 @@
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
