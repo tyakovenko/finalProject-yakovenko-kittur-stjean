@@ -31,8 +31,8 @@
 
     const color = (i) => {
         if (i === 0 || i === 1) return "#FF0000";
-        const Shades = ["#FFA500", "#FF8C00", "#FF7F50", "#FF6347", "#FF4500"];
-        //
+        // const Shades = ["#FFA500", "#FF8C00", "#FF7F50", "#FF6347", "#FF4500"];
+        const Shades = ["#ff0000", "#ff0000", "#1e90ff", "#4169e1", "#6495ed", "#00bfff", "#87cefa"];
         return Shades[i % Shades.length];
     };
 
@@ -51,14 +51,13 @@
     arcs.append("path")
         .attr("d", arc)
         .attr("fill", (d, i) => color(i))
-        .attr("stroke", "darkorange")
-        // .attr("stroke", "darkblue")
+        //.attr("stroke", "darkorange")
+        .attr("stroke", "darkblue")
         .attr("stroke-width", "2px");
 
     arcs.append("text")
         .attr("transform", d => "translate(" + arc.centroid(d) + ")")
         .attr("dy", "0.35em")
-        .text(d => `${d.data.sum_values}`)
         .style("text-anchor", "middle")
         .style("font-size", "12px");
 </script>
