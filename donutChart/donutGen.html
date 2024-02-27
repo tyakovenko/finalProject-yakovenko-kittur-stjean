@@ -7,15 +7,18 @@
 <body>
 <svg width="600" height="600"></svg>
 <script>
-    const data = [
-        {array_id: 9, sum_values: 45},
-        {array_id: 9, sum_values: 44},
-        {array_id: 9, sum_values: 18},
-        {array_id: 9, sum_values: 22},
-        {array_id: 9, sum_values: 67},
-        {array_id: 9, sum_values: 99},
-        {array_id: 9, sum_values: 78}
-    ];
+    // const values = [85, 15, 79, 80, 10, 55, 41, 32, 58, 83];
+    // const values = [15, 34, 33, 97, 43];
+    // const values = [95, 33, 53, 25, 5, 54, 18, 36];
+    // const values = [5, 79, 78,11,78,66, 41, 43, 6];
+    // const values = [50, 88, 64, 21, 31, 36, 89, 27];
+    // const values = [57, 23, 32, 23, 76, 24, 83];
+    // const values = [56,73,74,66,6,54,99,11];
+    // const values = [21,44,68,6,12];
+    // const values = [37,5,23,15,54,99,63];
+    // const values = [45,44,18,22,67,99,78];
+    const data = values.map(sum_values => ({ sum_values }));
+
     const width = 600;
     const height = 600;
     const radius = Math.min(width, height) / 2 - 40;
@@ -26,11 +29,11 @@
         .append("g")
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-    // Define a color scale with different shades of blue, and red for the first two values
     const color = (i) => {
-        if (i === 0 || i === 1) return "#FF0000"; // Red for the first two values
-        const blueShades = ["#add8e6", "#87CEEB", "#4682B4", "#4169E1", "#0000FF"];
-        return blueShades[i - 2]; // Adjust index for blue shades given the fewer number of data points
+        if (i === 0 || i === 1) return "#FF0000";
+        const Shades = ["#FFA500", "#FF8C00", "#FF7F50", "#FF6347", "#FF4500"];
+        //
+        return Shades[i % Shades.length];
     };
 
     const arc = d3.arc()
@@ -47,12 +50,15 @@
 
     arcs.append("path")
         .attr("d", arc)
-        .attr("fill", (d, i) => color(i));
+        .attr("fill", (d, i) => color(i))
+        .attr("stroke", "darkorange")
+        // .attr("stroke", "darkblue")
+        .attr("stroke-width", "2px");
 
     arcs.append("text")
         .attr("transform", d => "translate(" + arc.centroid(d) + ")")
         .attr("dy", "0.35em")
-        .text(d => `ID ${d.data.array_id}: ${d.data.sum_values}`)
+        .text(d => `${d.data.sum_values}`)
         .style("text-anchor", "middle")
         .style("font-size", "12px");
 </script>
