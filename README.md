@@ -1,6 +1,6 @@
 # finalProject-yakovenko-kittur-stjean
 
-Website: https://sites.google.com/view/cs4804yakovenko-kittur-stjean/visualization?authuser=1
+Website: https://sites.google.com/view/cs4804yakovenko-kittur-stjean/home
 
 Our website has our process book, visualization, screen-cast, and data.
 
