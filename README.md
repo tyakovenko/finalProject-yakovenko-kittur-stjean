@@ -22,20 +22,18 @@ The data was collected by each of the group members separately for each visualiz
 Each of the 10 graphs represented the same set of 10 arrays for consistency in comparing the results. The data was evaluates in a similar manner to A3 with the addition of calculations to compare the average errors for high and low contrast visualizations
 
 Below are some examples of high and low contrast charts provided on the three types of surveys.
-![Bar Chart Low Contrast](barChart/imgs/b2Orange.png)
+### Low Contrast Bar Chart
+![Bar Chart Low Contrast](barChart/imgs/barOrange4.png)
+### High Contrast Bar Chart
 ![Bar Chart High Contrast](barChart/imgs/b1.png)
+### Low Contrast Radar Chart
 ![Radar Chart Low Contrast](lowContrast/rChart1.png)
+### High Contrast Radar Chart
 ![Radar Chart High Contrast](highContrast/rChart1.png)
-![Donut Chart Low Contrast](highContrast/rChart1.png) 
-![Donut Chart High Contrast](highContrast/rChart1.png)
-
-
-
-# Exploratory Data Analysis
-I have no idea what this section is
-
-# Design Evolution
-I have no idea what this section is
+### Low Contrast Donut Chart
+![Donut Chart Low Contrast](donuts/o1.png) 
+### High Contrast Donut Chart
+![Donut Chart High Contrast](donuts/b1.png)
 
 # Evaluation
 ## Bar Chart
@@ -94,3 +92,12 @@ Another potential source of error could've come from the fact that some particip
 Finally, including the scales for each graph might have made it easier for participants to calculate the exact numerical differences. 
 ## Reflection
 Overall, we saw that the errors were relatively high with similar values for high and low contrast charts. However, the overall errors for bar charts were the lowest establishing that the bar charts are the best way to represent simple numeric data followed closely by radar charts. Notice that the low contrast errors were very similar to those of high contrast charts suggesting that the colour of visualization does not have a great impact on user perception. Shorter surverys did not result in lower errors for bar and radar charts when compared to A3 results. However, errors for donut charts are noticibly lower when compared to A3. Finally, simplifying the question for each visualization did not have significant impact on the errors. 
+
+# Technical and Design Achievements
+## Technical
+- statistical analysis
+- three separate surveys for each visualization type
+## Design
+
+# Credits 
+Taya - analysis and analysis report; code for bar charts and visualization generation; bar charts survey data collection
