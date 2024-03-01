@@ -36,7 +36,7 @@ def errors (fileString, colNames, dif, errorOutputFile):
     dfErrors.to_csv(errorOutputFile, index_label=False)
     return dfErrors
 
-def viz (x, y, title):
+def viz (x, y, title, outputFile):
     # Perform linear regression to get the line of best fit
     coefficients = np.polyfit(x, y, 1)  # Perform linear regression (1st degree polynomial)
     polynomial = np.poly1d(coefficients)  # Create a polynomial function from the coefficients
@@ -49,4 +49,30 @@ def viz (x, y, title):
     plt.ylabel('Error Averages')  # Set the label for the y-axis
     plt.title(title)  # Set the title of the plot
     plt.grid(True)  # Show grid
-    plt.show()  # Display the plot
+    plt.savefig(outputFile)
+    #plt.show()  # Display the plot
+
+def createBarChart (chartTitle, oData, bData, outputName):
+    # X-axis indices for the data points
+    x_indices = np.arange(len(oData))
+
+    # Width of each bar
+    bar_width = 0.35
+
+    # Create the bar graph
+    plt.bar(x_indices, oData, bar_width, color='blue', label='Blue Graph Error Average')
+    plt.bar(x_indices + bar_width, bData, bar_width, color='orange', label='Orange Graph Error Average')
+
+    # Adding labels and title
+    plt.xlabel('Data Array Index')
+    plt.ylabel('Errors for Each Data Array')
+    plt.title(chartTitle)
+
+    # Adding legend
+    plt.legend()
+
+    # Adding x-axis ticks
+    plt.xticks(x_indices + bar_width / 2, ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'])
+
+    # Show the plot
+    plt.savefig(outputName)
