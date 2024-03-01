@@ -10,7 +10,7 @@ Contributions:
 
 Taya:
 
-Ash:
+Ash: Made donut charts, created visualizations from donut charts
 
 Myles: Made radar charts, implemented surveys for each type + stored results, distributed radar experiment, made website, recorded screen-cast.
 
