@@ -58,6 +58,7 @@ barErrorAvgs = barErrors.mean().to_list() #average errors for each viz across al
 #pc.viz(dataStd, barErrorAvgs[10:], "Average Errors for Blue Bar Visualizations", barAvgErrorsGraphBlue)
 barOrangeErrorsAvg = barErrorAvgs[0:10]
 barBlueErrorsAvg = barErrorAvgs[10:]
+
 barBarChartTitle = 'Comparison of Average Errors for Blue and Orange Visualizations for each Data Array for Bar Charts'
 #pc.createBarChart(barBarChartTitle, barOrangeErrorsAvg, barBlueErrorsAvg, barBarCompGraph)
 
@@ -68,9 +69,10 @@ barBarChartTitle = 'Comparison of Average Errors for Blue and Orange Visualizati
 
 donutErrors = pc.errors(donutInput, colNames, dif, donutErrorsOutput)
 donutErrorAvgs = donutErrors.mean().to_list() #average errors for each viz across all participants
-#pc.viz(dataStd, donutErrorAvgs[0:10], "Average Errors for Orange Donut Visualizations", donutAvgErrorsGraphOrange)
+pc.viz(dataStd, donutErrorAvgs[0:10], "Average Errors for Orange Donut Visualizations", donutAvgErrorsGraphOrange)
 #pc.viz(dataStd, barErrorAvgs[10:], "Average Errors for Blue Donut Visualizations", donutAvgErrorsGraphBlue)
 donutOrangeErrorsAvg = donutErrorAvgs[0:10]
 donutBlueErrorsAvg = donutErrorAvgs[10:]
+print(sum(donutBlueErrorsAvg)/len(donutBlueErrorsAvg))
 donutBarChartTitle = 'Comparison of Average Errors for Blue and Orange Visualizations for each Data Array for Donut Charts'
-pc.createBarChart(donutBarChartTitle, donutOrangeErrorsAvg, donutBlueErrorsAvg, donutBarCompGraph)
+#pc.createBarChart(donutBarChartTitle, donutOrangeErrorsAvg, donutBlueErrorsAvg, donutBarCompGraph)
