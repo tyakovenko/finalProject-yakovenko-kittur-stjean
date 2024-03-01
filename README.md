@@ -106,5 +106,7 @@ Overall, we saw that the errors were relatively high with similar values for hig
 
 # Credits 
 Taya - analysis and analysis report; code for bar charts and visualization generation; bar charts survey data collection
+
 Myles - Made radar charts, implemented surveys for each type + stored results, distributed radar experiment, made website, recorded screen-cast.
+
 Ash -
