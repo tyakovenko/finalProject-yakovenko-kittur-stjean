@@ -28,9 +28,9 @@ Previous assignment A3 (+ Cleveland/McGill), discussions with Professor Harrison
 
 # Hypothesis 
 In this extension of the experiment given in A3 we aim to answer the three questions below:
-## How does visualization type affect participants’ ability to estimate numeric differences?
-## How does color contrast affect participants’ ability to estimate numeric differences?
-## How does survey length affect participants’ ability to estimate numeric differences?
+- How does visualization type affect participants’ ability to estimate numeric differences?
+- How does color contrast affect participants’ ability to estimate numeric differences?
+- How does survey length affect participants’ ability to estimate numeric differences?
 
 # Data Collection and Evaluation
 The data was collected by each of the group members separately for each visualization type. More specifically, we created three seperate pages with corresponding QR codes to surveys for bar, radar, and donut visualizations. In contrast to A3, each survey contained only 20 questions: the first 10 related to low contrast charts and the last 10 related to high contrast charts for each visualization type. The participants were able to take the survey on their phone or computer for convenience. 
