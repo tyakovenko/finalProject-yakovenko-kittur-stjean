@@ -36,12 +36,31 @@ I have no idea what this section is
 
 # Evaluation
 ## Bar Chart
+The average error for high contrast bar charts based on the standard deviation of each dataset:
 ![Average Error for High Contrast Visualizations](results/barAvgErrorsBlue.png)
+
+The average error for low contrast bar charts based on the standard deviation of each dataset:
 ![Average Error for Low Contrast Visualizations](results/barAvgErrorsOrange.png)
+
+Error comparison between high and low contrast for each data array:
 ![Average Error Comparison for Each Data Array](results/barErrorsBlueOrange.png)
 
 ## Radar Chart
+The average error for high contrast radar charts based on the standard deviation of each dataset:
 ![Average Error for High Contrast Visualizations](results/radarAvgErrorsBlue.png)
+
+The average error for low contrast radar charts based on the standard deviation of each dataset:
 ![Average Error for Low Contrast Visualizations](results/radarAvgErrorsOrange.png)
+
+Error comparison between high and low contrast for each data array:
 ![Average Error Comparison for Each Data Array](results/radarErrorsBlueOrange.png)
+
 ## Donut Chart
+The average error for high contrast donut charts based on the standard deviation of each dataset:
+![Average Error for High Contrast Visualizations](results/donutAvgErrorsBlue.png)
+
+The average error for low contrast donut charts based on the standard deviation of each dataset:
+![Average Error for Low Contrast Visualizations](results/donutAvgErrorsOrange.png)
+
+Error comparison between high and low contrast for each data array:
+![Average Error Comparison for Each Data Array](results/donutErrorsBlueOrange.png)
