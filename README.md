@@ -5,12 +5,12 @@ Our website has our process book, visualization, screen-cast, and data.
 The visualizations used in our experiments were adapted from the ones we used in A3, which use d3. The experiments themselves were implemented with the SurveyJS library.
 
 # Overview and Motivation
-Implement three different surveys, each with one visualization type.
-To decrease the effort required of the participants to possibly decrease fatigue and improve the consistency of results.
-Surveys were designed using SurveyJS library + React and deployed via GitHub pages
-In each survey, feature 10 pairs of visualizations, with one from each pair being “low-contrast” and the other “high-contrast”.
-To assess the impact of color contrast on participants’ ability to estimate numeric differences.
-VIsualizations were created with d3.
+- Implement three different surveys, each with one visualization type.
+- To decrease the effort required of the participants to possibly decrease fatigue and improve the consistency of results.
+- Surveys were designed using SurveyJS library + React and deployed via GitHub pages
+- In each survey, feature 10 pairs of visualizations, with one from each pair being “low-contrast” and the other “high-contrast”.
+- To assess the impact of color contrast on participants’ ability to estimate numeric differences.
+- Visualizations were created with d3.
 
 # Related Work: 
 
