@@ -22,10 +22,13 @@ The data was collected by each of the group members separately for each visualiz
 Each of the 10 graphs represented the same set of 10 arrays for consistency in comparing the results. The data was evaluates in a similar manner to A3 with the addition of calculations to compare the average errors for high and low contrast visualizations
 
 Below are some examples of high and low contrast charts provided on the three types of surveys.
-![Bar Chart Low Contrast](barChart/imgs/bOrange1.png)
+![Bar Chart Low Contrast](barChart/imgs/b2Orange.png)
 ![Bar Chart High Contrast](barChart/imgs/b1.png)
 ![Radar Chart Low Contrast](lowContrast/rChart1.png)
 ![Radar Chart High Contrast](highContrast/rChart1.png)
+![Donut Chart Low Contrast](highContrast/rChart1.png) 
+![Donut Chart High Contrast](highContrast/rChart1.png)
+
 
 
 # Exploratory Data Analysis
@@ -39,28 +42,55 @@ I have no idea what this section is
 The average error for high contrast bar charts based on the standard deviation of each dataset:
 ![Average Error for High Contrast Visualizations](results/barAvgErrorsBlue.png)
 
+The average error for the high contrast bar chart was 3.9888914098102553.
+
 The average error for low contrast bar charts based on the standard deviation of each dataset:
 ![Average Error for Low Contrast Visualizations](results/barAvgErrorsOrange.png)
 
+The average error for the low contrast bar charts was 4.033975418651378.
+
+
 Error comparison between high and low contrast for each data array:
 ![Average Error Comparison for Each Data Array](results/barErrorsBlueOrange.png)
+
+Notice that the average error for the high contrast charts was similar to that of average error for the low contrast chart. Moreover, high contrast chart had stronger correlation with standard deviation. Contrary to the hypothesis, the overall error with low contrast charts seems to be lower.
 
 ## Radar Chart
 The average error for high contrast radar charts based on the standard deviation of each dataset:
 ![Average Error for High Contrast Visualizations](results/radarAvgErrorsBlue.png)
 
+The average error for the high contrast charts was 4.034301439723086.
+
 The average error for low contrast radar charts based on the standard deviation of each dataset:
 ![Average Error for Low Contrast Visualizations](results/radarAvgErrorsOrange.png)
 
+The average error for the low contrast charts was 3.935321847641552.
+
 Error comparison between high and low contrast for each data array:
 ![Average Error Comparison for Each Data Array](results/radarErrorsBlueOrange.png)
+
+Notice that the high contrast radar charts had lower correlation with the standard deviation than the low contrast radar charts. However, the overall errors seem to be similar and very close with the bar charts above. 
 
 ## Donut Chart
 The average error for high contrast donut charts based on the standard deviation of each dataset:
 ![Average Error for High Contrast Visualizations](results/donutAvgErrorsBlue.png)
 
+The average error for high contrast donut charts was 4.377846506419004.
+
 The average error for low contrast donut charts based on the standard deviation of each dataset:
 ![Average Error for Low Contrast Visualizations](results/donutAvgErrorsOrange.png)
 
+The average error for the low contrast donut charts was 4.489632010051756.
+
 Error comparison between high and low contrast for each data array:
 ![Average Error Comparison for Each Data Array](results/donutErrorsBlueOrange.png)
+
+Notice that the high contrast donut charts had lower errors but high correlation with the standard deviation when compared to the low contrast charts. Overall, the errors were similar for both as shown for the other chart types above. 
+
+# Conclusion
+## Sources of Error
+Some of the potential sources of error include showing low contrast charts before the high contrast charts. Since the users saw the same data for both, it might have been easier to determine the difference for the high contrast charts on the second page of the survey. 
+Another potential source of error could've come from the fact that some participants took the survey on their phones vs. computer. The UI for a phone was a bit harder to use making it harder for participants to accurately calculate the errors. 
+Finally, including the scales for each graph might have made it easier for participants to calculate the exact numerical differences. 
+## Reflection
+Overall, we saw that the errors were relatively high with similar values for high and low contrast charts. However, the overall errors for bar charts were the lowest establishing that the bar charts are the best way to represent simple numeric data followed closely by radar charts. Notice that the low contrast errors were very similar to those of high contrast charts suggesting that the colour of visualization does not have a great impact on user perception. Shorter surverys did not result in lower errors for bar and radar charts when compared to A3 results. However, errors for donut charts are noticibly lower when compared to A3. Finally, simplifying the question for each visualization did not have significant impact on the errors. 
