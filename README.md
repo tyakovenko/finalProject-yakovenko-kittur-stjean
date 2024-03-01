@@ -73,3 +73,13 @@ The average error for low contrast donut charts based on the standard deviation 
 
 Error comparison between high and low contrast for each data array:
 ![Average Error Comparison for Each Data Array](results/donutErrorsBlueOrange.png)
+
+## Donut Chart Achievements
+The generator code was designed to work with several inputs at once, allowing for ease-of-access.
+The first two values will always be painted red in the visualization, regardless of their position, allowing for increased visual clarity.
+
+## Credits
+
+Donut Chart:
+* d3.js https://d3js.org/
+* CSS/HTML
