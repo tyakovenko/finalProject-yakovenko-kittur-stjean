@@ -52,7 +52,7 @@ def viz (x, y, title, outputFile):
     plt.savefig(outputFile)
     #plt.show()  # Display the plot
 
-def createBarChart (chartTitle, oData, bData, outputName):
+def createBarChart(chartTitle, oData, bData, outputName):
     # X-axis indices for the data points
     x_indices = np.arange(len(oData))
 
